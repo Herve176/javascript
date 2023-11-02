@@ -4,16 +4,17 @@
 
 //simple
 // je veux qu'un compteur incrémente a chaque fois qu'on click sur sign-in
-const count = document.getElementById('counter');
+const count = document.getElementById("counter")
 let i = 0;
 
 document.getElementById("submit").addEventListener("click", function() {
+    
     i += 1;
-    count.textContent = i;
+    count.innerHTML = i
     // Add this code to your JavaScript file (index.js)
 
-
-});
+    
+})
 
     
 
