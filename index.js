@@ -7,11 +7,14 @@
 const count = document.getElementById("counter")
 let i = 0;
 
-document.getElementById("submit").addEventListener("click", function() {
-    
+document.getElementById("submit").addEventListener("click", function(e) {
+    // il faut bloquer le comportement par default du button submit en faisant un preventDefault() sur l'evenement e (en parametre de la fonction)
+    // je te le faire toi meme
     i += 1;
     count.innerHTML = i
     // Add this code to your JavaScript file (index.js)
+
+
 
     
 })
