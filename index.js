@@ -14,7 +14,7 @@ document.getElementById("submit").addEventListener("click", function(event) {
     i += 1;
     count.innerHTML = i
     show.innerHTML=email; password;
-    
+    event.preventDefault();
     // Add this code to your JavaScript file (index.js)
    });
 
