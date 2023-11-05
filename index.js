@@ -14,7 +14,7 @@ document.getElementById("submit").addEventListener("click", function(event) {
     i += 1;
     count.innerHTML = i
     show.innerHTML=email; password;
-    event.preventDefault();
+    event.preventDefault(); // le prevent default de fait avant toutes les autres instrutions
     // Add this code to your JavaScript file (index.js)
    });
 
