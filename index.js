@@ -7,12 +7,14 @@
 const count = document.getElementById("counter")
 let i = 0;
 
-document.getElementById("submit").addEventListener("click", function(event) {
+document.getElementById("submit").addEventListener("click", function() {
     
     i += 1;
     count.innerHTML = i
     event.preventDefault();
     // Add this code to your JavaScript file (index.js)
+
+
 
     
 })
