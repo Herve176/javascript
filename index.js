@@ -16,7 +16,7 @@ document.getElementById("submit").addEventListener("click", function(event) {
     show.innerHTML=email; password;
     event.preventDefault();
     // Add this code to your JavaScript file (index.js)
-   });
+    });
 
 
 
