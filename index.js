@@ -5,25 +5,20 @@
 //simple
 // je veux qu'un compteur incrémente a chaque fois qu'on click sur sign-in
 const count = document.getElementById("counter")
-const show = document.getElementById("show")
+const showme = document.getElementById("show")
 let i = 0;
-let email = Document.getElementById("email");
-let password = Document.getElementById("password");
+
 document.getElementById("submit").addEventListener("click", function(event) {
     event.preventDefault();
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
     i += 1;
     count.innerHTML = i
-    show.innerHTML=email; password;
-    event.preventDefault();
+    showme.append(email.value + password.value)
+    
     // Add this code to your JavaScript file (index.js)
     });
 
-
-
-
-    
-
-    
 // je veux savoir qui a essayer de se connecter [email, password]
 
 
