@@ -6,7 +6,11 @@
 // je veux qu'un compteur incrémente a chaque fois qu'on click sur sign-in
 const count = document.getElementById("counter")
 const showme = document.getElementById("show")
+let emails = document.getElementById("email");
+let passwords = document.getElementById("password");
 let i = 0;
+let email='rode@rode.com'
+let password = 'password123'
 
 document.getElementById("submit").addEventListener("click", function(event) {
     event.preventDefault();
@@ -26,6 +30,11 @@ document.getElementById("submit").addEventListener("click", function(event) {
 
 //intermediate
 // je veux le nombre d'essaie ok et not ok
+try{
+    if(emails===email){
+    
+    }
+}
 
 // je veux qu'au 5ieme essaie ok, on previenne l'utilisateur qu'il se rediriger 
 
