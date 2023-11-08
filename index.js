@@ -12,6 +12,7 @@ let i = 0;
 let email='rode@rode.com'
 let password = 'password123'
 
+if(passwords == password && emails == email){
 document.getElementById("submit").addEventListener("click", function(event) {
     event.preventDefault();
     let email = document.getElementById("email");
@@ -22,7 +23,9 @@ document.getElementById("submit").addEventListener("click", function(event) {
     
     // Add this code to your JavaScript file (index.js)
     });
-
+}else{
+i=10
+}
 // je veux savoir qui a essayer de se connecter [email, password]
 
 
@@ -30,11 +33,7 @@ document.getElementById("submit").addEventListener("click", function(event) {
 
 //intermediate
 // je veux le nombre d'essaie ok et not ok
-try{
-    if(emails===email){
-    
-    }
-}
+
 
 // je veux qu'au 5ieme essaie ok, on previenne l'utilisateur qu'il se rediriger 
 
