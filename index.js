@@ -4,28 +4,36 @@
 
 //simple
 // je veux qu'un compteur incrémente a chaque fois qu'on click sur sign-in
-const count = document.getElementById("counter")
+const countpos = document.getElementById("counter")
+const countnev = document.getElementById("counterneg")
 const showme = document.getElementById("show")
-let emails = document.getElementById("email");
-let passwords = document.getElementById("password");
-let i = 0;
-let email='rode@rode.com'
-let password = 'password123'
-
-if(passwords == password && emails == email){
-document.getElementById("submit").addEventListener("click", function(event) {
+const showincor = document.getElementById("showincor")
+let i = 0
+let j=0
+let emails='rode@rode.com'
+let passwords = 'password123'
+document.getElementById("submit").addEventListener("click", function listen(event) {
+    
     event.preventDefault();
     let email = document.getElementById("email");
     let password = document.getElementById("password");
+    if(email.value == emails && password.value == passwords){
     i += 1;
-    count.innerHTML = i
-    showme.append(email.value + password.value)
-    
+    countpos.innerHTML = "positive attempt:" + i
+    showme.append("correct connected:"+ email.value + password.value)
+    }else{
+    j += 1;
+    countnev.innerHTML = "negative attempt:" + j
+    showincor.append("incorrect connection:" + email.value + password.value)
+    }
     // Add this code to your JavaScript file (index.js)
     });
-}else{
-i=10
-}
+
+
+
+
+
+
 // je veux savoir qui a essayer de se connecter [email, password]
 
 
