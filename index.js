@@ -24,7 +24,7 @@ document.getElementById("submit").addEventListener("click", function listen(even
     showme.append("correct connected:"+ email.value + password.value)
     if(i == 5){function Redirect(){window.location = "www.google.com"}
     window.alert("Please go back to start site.you will be redirected in 10s")
-    setTimeout(function(){Redirect()},10000) 
+    setTimeout(function(){Redirect()},1000) 
     }
     }else{
     j += 1;
