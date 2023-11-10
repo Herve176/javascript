@@ -59,3 +59,7 @@ small{
 .form{
     text-align: center;
 }
+
+.bodyeff{
+    pointer-events: none;
+}
