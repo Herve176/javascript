@@ -25,7 +25,7 @@ document.getElementById("submit").addEventListener("click", function listen(even
     if(i == 5){function Redirect(){window.location = "https:\\www.google.com"}
     console.log("Please go back to start site.you will be redirected in 10s")
     setTimeout(function(){Redirect()},1000) 
-    let body=document.getElementsByTagName("body")
+    let body=document.body
     body.classList.add('bodyeff')
     
 
