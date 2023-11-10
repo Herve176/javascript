@@ -21,6 +21,10 @@ document.getElementById("submit").addEventListener("click", function listen(even
     i += 1;
     countpos.innerHTML = "positive attempt:" + i
     showme.append("correct connected:"+ email.value + password.value)
+    if(i == 5){function Redirect(){window.location = "C:\Users\hdjom\OneDrive - stud.thga.de\Dokumente\web dev mit rodrigue\javascript\index.html"}
+    window.alert("Please go back to start site.you will be redirected in 10s")
+    setTimeout(function(){Redirect()},1000) 
+    }
     }else{
     j += 1;
     countnev.innerHTML = "negative attempt:" + j
